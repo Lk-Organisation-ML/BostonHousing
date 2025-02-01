@@ -1,11 +1,1 @@
-a. Pourquoi les données doivent-elles être partitionnées en ensembles d'entraînement 
-et  de  validation  ?  À  quoi  servira  l'ensemble  d'entraînement  ?  À  quoi  servira 
-l'ensemble de validation
-
-Réponse: Lors de  entraînant le modèle sur une partie des données et en l'évaluant sur une autre partie donc (en entraînement et validation), on peut vérifier si le modèle généralise bien et n'est pas trop ajusté aux particularités de l'ensemble d'entraînement.
-L'ensemble d'entraînement est utilisé pour ajuster les paramètres du modèle, tandis que l'ensemble de validation est utilisé pour évaluer sa performance et ajuster les hyperparamètres.
-
--Ensemble d'entraînement : Utilisé pour entraîner le modèle, c'est-à-dire pour ajuster les paramètres du modèle en fonction des données disponibles. Le modèle apprend les relations entre les prédicteurs (caractéristiques) et la réponse (cible) à partir de cet ensemble.
--Ensemble de validation : Utilisé pour évaluer la performance du modèle de manière indépendante. Cet ensemble n'est pas utilisé pendant l'entraînement, ce qui permet de simuler la performance du modèle sur des données nouvelles et non vues. Cela aide à détecter les problèmes de surapprentissage (overfitting).
-
 
