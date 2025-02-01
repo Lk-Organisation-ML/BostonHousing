@@ -46,7 +46,7 @@ résultats :
 Modèle              | MSE   | R² Score 
 ------------------  |-------|---------
 Régression Linéaire | 22.7 | 0.69    
-    
+``` 
 
 ## Installation et Exécution
 ### 1. Cloner le repository
