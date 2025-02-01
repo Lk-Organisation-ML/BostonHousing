@@ -4,19 +4,7 @@ prédiciton du prix des maisons dans la ville de Boston en Fonction de leurs pri
 # Dataset
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -229,3 +217,46 @@ prédiciton du prix des maisons dans la ville de Boston en Fonction de leurs pri
 </table>
 <p>506 rows × 14 columns</p>
 </div>
+
+### Description
+Le fichier ./Data/BostonHousing.csv contient des données sur les logements dans la région de Boston. 
+
+Voici les noms des colonnes et leur signification en français :
+
+CRIM : Taux de criminalité par habitant.
+ZN : Proportion de terrains résidentiels zonés pour des lots de plus de 25 000 pieds carrés.
+INDUS : Proportion de la surface occupée par des activités non commerciales.
+CHAS : Variable fictive indiquant si le tracé longe la rivière Charles (1) ou non (0).
+NOX : Concentration en oxydes d'azote (parties par 10 millions).
+RM : Nombre moyen de pièces par logement.
+AGE : Proportion de logements construits avant 1940.
+DIS : Distance pondérée aux cinq principaux centres d'emploi de Boston.
+RAD : Indice d'accessibilité aux autoroutes radiales.
+TAX : Taux d'imposition foncière par 10 000 dollars.
+PTRATIO : Ratio élèves/enseignant par ville.
+LSTAT : Pourcentage de la population d'origine étrangère.
+MEDV : Valeur médiane des logements occupés par leur propriétaire (en milliers de dollars).
+CAT. MEDV : Variable catégorielle indiquant si la valeur médiane est supérieure à 30 000 dollars (1) ou non (0).
+
+
+### 1. Chargement et Exploration des Données
+Avant toute modélisation, il est crucial de comprendre la structure et la distribution des données.
+
+### 2. Nettoyage et Prétraitement
+Nous vérifions les valeurs manquantes et les anomalies éventuelles.
+
+### 3. Séparation en Ensemble d’Entraînement et de Test
+Nous divisons les données en un jeu d’entraînement (train) et un jeu de test (test).
+
+### 4. Sélection de la Variable Cible et des Facteurs
+Variable cible : MEDV (Valeur médiane des logements).
+Facteurs explicatifs : Toutes les autres colonnes sauf MEDV et CAT.MEDV.
+
+### 5. Exploration des Corrélations
+Nous utilisons des matrices de corrélation pour identifier les variables les plus influentes.
+
+### 6. Entraînement d’un Modèle de Régression
+Nous utilisons une régression linéaire pour commencer.
+
+### 7. Évaluation du Modèle
+j'utiliserai des métriques comme MSE (Mean Squared Error) et R² (coefficient de détermination) pour mesurer la performance.
